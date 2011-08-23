@@ -1,3 +1,7 @@
+
+import montoescrito.MontoEspanol;
+import montoescrito.MontoIngles;
+
 /*
  * orlandobcrra@gmail.com
  * 10 / 04 / 2011
@@ -12,7 +16,7 @@ public class Demo {
 
     public static void main(String[] args) {
         System.out.println("Español:");
-        System.out.println(MontoEspanol.escribir("a.456", false, false));
+        System.out.println(MontoEspanol.escribir("3331.456"));
         System.out.println(MontoEspanol.escribir(121.456));
         System.out.println("");
         System.out.println("Ingles:");

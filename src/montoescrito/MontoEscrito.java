@@ -103,7 +103,7 @@ public class MontoEscrito {
                     : consulta(numero.intValue());
         } else if (numero.compareTo(cien) < 0) {                                // 16 - 99
             int decena = (numero.intValue() - (numero.intValue() % 10));
-            return consulta(decena) + unionDecena + escribir(numero.mod(BigInteger.TEN), banderaEscribirUno);
+            return consulta(decena) + (numero.intValue() % 10 == 0 ? "" : unionDecena) + escribir(numero.mod(BigInteger.TEN), banderaEscribirUno);
         } else if (numero.compareTo(mil) < 0) {                                 // 100 - 999 = CIENTOS
             if (cienFijo != null && numero.compareTo(cien) == 0) {
                 return cienFijo;

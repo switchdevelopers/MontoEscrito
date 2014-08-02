@@ -184,7 +184,7 @@ public class MontoEscrito {
             int digitosEnteros = numeroTexto.substring(0, numeroTexto.indexOf('.')).length();
             numero = numero.round(new MathContext(digitosEnteros + cantDecimales));
         }
-        System.out.println(numero.toPlainString());
+        
         return escribir(numero, escribirDecimal);
     }
 }

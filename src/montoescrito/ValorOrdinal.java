@@ -126,9 +126,19 @@ public class ValorOrdinal {
     /**
      *
      * @param monto valor dado en Double a escribir
-     * @return el monto expresado en Español, redondeado y con parte decimal
+     * @return el monto expresado en Español, redondeado y sin parte decimal
      */
     public static String escribir(Double monto) {
         return escribir(monto, true, false);
     }
+    
+    /**
+     *
+     * @param monto valor dado en Integer a escribir
+     * @return el monto expresado en Español, redondeado y sin parte decimal
+     */
+    public static String escribir(Integer monto) {
+        return escribir(monto.toString(), true, false);
+    }
+   
 }
